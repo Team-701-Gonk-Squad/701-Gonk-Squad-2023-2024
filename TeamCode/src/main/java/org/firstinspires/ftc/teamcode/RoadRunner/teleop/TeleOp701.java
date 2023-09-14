@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.teleop;
+package org.firstinspires.ftc.teamcode.RoadRunner.teleop;
 
 import android.graphics.Color;
 
@@ -20,8 +20,8 @@ public class TeleOp701 extends LinearOpMode{
     private DcMotor fr;
     private DcMotor bl;
     private DcMotor br;
-    //private DcMotor action1;
-    //private DcMotor action2;
+    private DcMotor action1;
+    private DcMotor action2;
     private CRServo action3;
     private CRServo action4;
     private ColorRangeSensor colorBlind;
@@ -38,8 +38,8 @@ public class TeleOp701 extends LinearOpMode{
         fr = hardwareMap.get(DcMotor.class, "front_right");
         bl = hardwareMap.get(DcMotor.class, "back_left");
         br = hardwareMap.get(DcMotor.class, "back_right");
-        //action1 = hardwareMap.get(DcMotor.class, "action1");
-        //action2 = hardwareMap.get(DcMotor.class, "action2");
+        action1 = hardwareMap.get(DcMotor.class, "action1");
+        action2 = hardwareMap.get(DcMotor.class, "action2");
         action3 = hardwareMap.get(CRServo.class, "action3");
         action4 = hardwareMap.get(CRServo.class, "action4");
         colorBlind = hardwareMap.get(ColorRangeSensor.class, "bruh");
